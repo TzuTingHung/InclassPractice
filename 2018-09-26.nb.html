@@ -176,12 +176,140 @@ $(document).ready(function () {
 
 
 <!-- rnb-text-begin -->
-<p>This is an <a href="http://rmarkdown.rstudio.com">R Markdown</a> Notebook. When you execute code within the notebook, the results appear beneath the code.</p>
-<p>Try executing this chunk by clicking the <em>Run</em> button within the chunk or by placing your cursor inside it and pressing <em>Ctrl+Shift+Enter</em>.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGxvdChjYXJzKVxuYGBgIn0= -->
-<pre class="r"><code>plot(cars)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYTwtNVxuYTI8LTVMXG5gYGAifQ== -->
+<pre class="r"><code>a&lt;-5
+a2&lt;-5L</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYVZlY3RvcjwtYyg1LDYsNylcbmEyVmVjdG9yPC1jKDVMLDZMLDdMKVxuYGBgIn0= -->
+<pre class="r"><code>aVector&lt;-c(5,6,7)
+a2Vector&lt;-c(5L,6L,7L)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYjwtXCLkvaDlpb1cIlxuYlZlY3RvcjwtYyhcIuS9oOWlvVwiLFwiSG93IGFyZSB5b3U/XCIpXG5gYGAifQ== -->
+<pre class="r"><code>b&lt;-&quot;你好&quot;
+bVector&lt;-c(&quot;你好&quot;,&quot;How are you?&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucm91bmQoMi4zODc1KVxuYGBgIn0= -->
+<pre class="r"><code>round(2.3875)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucm91bmQoMi4zODc1LGRpZ2l0cyA9MilcbmBgYCJ9 -->
+<pre class="r"><code>round(2.3875,digits =2)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShyZWFkcilcbnN0dWRlbnQgPC0gcmVhZF9jc3YoXCJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vdHBlbWFydGluL2NvdXJzZS0xMDctMS1wcm9ncmFtbWluZy1mb3ItZGF0YS1zY2llbmNlL21hc3Rlci9kYXRhL3N0dWRlbnQuY3N2XCIpXG5saWJyYXJ5KGRwbHlyKVxubGlicmFyeShtYWdyaXR0cilcbnN0dWRlbnQgJTw+JSBtdXRhdGUoXG4gIOi6q+mrmOe0mui3nT1jdXQo6Lqr6auYLGMoMCwxNTAsMTU1LDE2MCwxNjUsMTcwLDE3NSwxODAsMTg1LDIwMCkpKVxuYGBgIn0= -->
+<pre class="r"><code>library(readr)
+student &lt;- read_csv(&quot;https://raw.githubusercontent.com/tpemartin/course-107-1-programming-for-data-science/master/data/student.csv&quot;)
+library(dplyr)
+library(magrittr)
+student %&lt;&gt;% mutate(
+  身高級距=cut(身高,c(0,150,155,160,165,170,175,180,185,200)))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYXMuZmFjdG9yKHN0dWRlbnQk5Ye655Sf5ZywKSAtPiBzdHVkZW50JOWHuueUn+WcsFxuYGBgIn0= -->
+<pre class="r"><code>as.factor(student$出生地) -&gt; student$出生地</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGV2ZWxzKHN0dWRlbnQk5Ye655Sf5ZywKVxuYGBgIn0= -->
+<pre class="r"><code>levels(student$出生地)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUoc3R1ZGVudCQn5Ye655Sf5ZywJylcbmBgYCJ9 -->
+<pre class="r"><code>table(student$'出生地')</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYXMuZmFjdG9yKHN0dWRlbnQk5YWl5a245bm0KSAtPiBzdHVkZW50JOWFpeWtuOW5tFxuYXMuZmFjdG9yKHN0dWRlbnQk5oCn5YilKSAtPiBzdHVkZW50JOaAp+WIpVxuYGBgIn0= -->
+<pre class="r"><code>as.factor(student$入學年) -&gt; student$入學年
+as.factor(student$性別) -&gt; student$性別</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGV2ZWxzKHN0dWRlbnQkJ+WFpeWtuOW5tCcpXG5sZXZlbHMoc3R1ZGVudCTmgKfliKUpXG5gYGAifQ== -->
+<pre class="r"><code>levels(student$'入學年')
+levels(student$性別)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUoc3R1ZGVudCQn5YWl5a245bm0JylcbnRhYmxlKHN0dWRlbnQkJ+aAp+WIpScpXG5gYGAifQ== -->
+<pre class="r"><code>table(student$'入學年')
+table(student$'性別')</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmFjdG9yKHN0dWRlbnQk6Lqr6auY57Sa6LedLFxuICAgICAgIGxldmVscz1jKFwiKDAsMTUwXVwiLFwiKDE1MCwxNTVdXCIsIFwiKDE1NSwxNjBdXCIsIFwiKDE2MCwxNjVdXCIgLFwiKDE2NSwxNzBdXCIsIFwiKDE3MCwxNzVdXCIgLFwiKDE3NSwxODBdXCIgLFwiKDE4MCwxODVdXCIsIFwiKDE4NSwyMDBdXCIpLFxuICAgICAgIG9yZGVyZWQ9VFJVRSkgLT4gc3R1ZGVudCTouqvpq5jntJrot51cbmBgYCJ9 -->
+<pre class="r"><code>factor(student$身高級距,
+       levels=c(&quot;(0,150]&quot;,&quot;(150,155]&quot;, &quot;(155,160]&quot;, &quot;(160,165]&quot; ,&quot;(165,170]&quot;, &quot;(170,175]&quot; ,&quot;(175,180]&quot; ,&quot;(180,185]&quot;, &quot;(185,200]&quot;),
+       ordered=TRUE) -&gt; student$身高級距</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaGVpZ2h0TGV2ZWxzIDwtIGMoXCIoMCwxNTBdXCIsXCIoMTUwLDE1NV1cIiwgXCIoMTU1LDE2MF1cIiwgXCIoMTYwLDE2NV1cIiAsXCIoMTY1LDE3MF1cIiwgXCIoMTcwLDE3NV1cIiAsXCIoMTc1LDE4MF1cIiAsXCIoMTgwLDE4NV1cIiwgXCIoMTg1LDIwMF1cIilcbmZhY3RvcihzdHVkZW50JCfouqvpq5jntJrot50nLFxuICAgICAgIGxldmVscz1oZWlnaHRMZXZlbHMsXG4gICAgICAgb3JkZXJlZD1UUlVFKSAtPiBzdHVkZW50JCfouqvpq5jntJrot50nXG5gYGAifQ== -->
+<pre class="r"><code>heightLevels &lt;- c(&quot;(0,150]&quot;,&quot;(150,155]&quot;, &quot;(155,160]&quot;, &quot;(160,165]&quot; ,&quot;(165,170]&quot;, &quot;(170,175]&quot; ,&quot;(175,180]&quot; ,&quot;(180,185]&quot;, &quot;(185,200]&quot;)
+factor(student$'身高級距',
+       levels=heightLevels,
+       ordered=TRUE) -&gt; student$'身高級距'</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYTwtXCIyMDE3LTAxLTMxXCJcbmBgYCJ9 -->
+<pre class="r"><code>a&lt;-&quot;2017-01-31&quot;</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShkcGx5cilcbmxpYnJhcnkobHVicmlkYXRlKVxuYSA8LSB5bWQoXCIyMDE3LTAxLTMxXCIpIFxuYiA8LSB5bWRfaG1zKFwiMjAxNy0wMS0zMSAyMDoxMTo1OVwiKVxuYGBgIn0= -->
+<pre class="r"><code>library(dplyr)
+library(lubridate)
+a &lt;- ymd(&quot;2017-01-31&quot;) 
+b &lt;- ymd_hms(&quot;2017-01-31 20:11:59&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYSA8LSB5bWQoXCIyMDE3LzAxLzMxXCIpIFxuYiA8LSB5bWRfaG1zKFwiMjAxNy0wMS0zMSAyOjUzOjAwcG1cIilcbmBgYCJ9 -->
+<pre class="r"><code>a &lt;- ymd(&quot;2017/01/31&quot;) 
+b &lt;- ymd_hms(&quot;2017-01-31 2:53:00pm&quot;)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
@@ -190,7 +318,7 @@ $(document).ready(function () {
 <p>The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike <em>Knit</em>, <em>Preview</em> does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.</p>
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIjIwMTgtMDktMjYiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpUaGlzIGlzIGFuIFtSIE1hcmtkb3duXShodHRwOi8vcm1hcmtkb3duLnJzdHVkaW8uY29tKSBOb3RlYm9vay4gV2hlbiB5b3UgZXhlY3V0ZSBjb2RlIHdpdGhpbiB0aGUgbm90ZWJvb2ssIHRoZSByZXN1bHRzIGFwcGVhciBiZW5lYXRoIHRoZSBjb2RlLiANCg0KVHJ5IGV4ZWN1dGluZyB0aGlzIGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqUnVuKiBidXR0b24gd2l0aGluIHRoZSBjaHVuayBvciBieSBwbGFjaW5nIHlvdXIgY3Vyc29yIGluc2lkZSBpdCBhbmQgcHJlc3NpbmcgKkN0cmwrU2hpZnQrRW50ZXIqLiANCg0KYGBge3J9DQpwbG90KGNhcnMpDQpgYGANCg0KQWRkIGEgbmV3IGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqSW5zZXJ0IENodW5rKiBidXR0b24gb24gdGhlIHRvb2xiYXIgb3IgYnkgcHJlc3NpbmcgKkN0cmwrQWx0K0kqLg0KDQpXaGVuIHlvdSBzYXZlIHRoZSBub3RlYm9vaywgYW4gSFRNTCBmaWxlIGNvbnRhaW5pbmcgdGhlIGNvZGUgYW5kIG91dHB1dCB3aWxsIGJlIHNhdmVkIGFsb25nc2lkZSBpdCAoY2xpY2sgdGhlICpQcmV2aWV3KiBidXR0b24gb3IgcHJlc3MgKkN0cmwrU2hpZnQrSyogdG8gcHJldmlldyB0aGUgSFRNTCBmaWxlKS4NCg0KVGhlIHByZXZpZXcgc2hvd3MgeW91IGEgcmVuZGVyZWQgSFRNTCBjb3B5IG9mIHRoZSBjb250ZW50cyBvZiB0aGUgZWRpdG9yLiBDb25zZXF1ZW50bHksIHVubGlrZSAqS25pdCosICpQcmV2aWV3KiBkb2VzIG5vdCBydW4gYW55IFIgY29kZSBjaHVua3MuIEluc3RlYWQsIHRoZSBvdXRwdXQgb2YgdGhlIGNodW5rIHdoZW4gaXQgd2FzIGxhc3QgcnVuIGluIHRoZSBlZGl0b3IgaXMgZGlzcGxheWVkLg0K</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIjIwMTgtMDktMjYiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KYGBge3J9DQphPC01DQphMjwtNUwNCmBgYA0KDQpgYGB7cn0NCmFWZWN0b3I8LWMoNSw2LDcpDQphMlZlY3RvcjwtYyg1TCw2TCw3TCkNCmBgYA0KDQpgYGB7cn0NCmI8LSLkvaDlpb0iDQpiVmVjdG9yPC1jKCLkvaDlpb0iLCJIb3cgYXJlIHlvdT8iKQ0KYGBgDQoNCmBgYHtyfQ0Kcm91bmQoMi4zODc1KQ0KYGBgDQoNCmBgYHtyfQ0Kcm91bmQoMi4zODc1LGRpZ2l0cyA9MikNCmBgYA0KDQpgYGB7cn0NCmxpYnJhcnkocmVhZHIpDQpzdHVkZW50IDwtIHJlYWRfY3N2KCJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vdHBlbWFydGluL2NvdXJzZS0xMDctMS1wcm9ncmFtbWluZy1mb3ItZGF0YS1zY2llbmNlL21hc3Rlci9kYXRhL3N0dWRlbnQuY3N2IikNCmxpYnJhcnkoZHBseXIpDQpsaWJyYXJ5KG1hZ3JpdHRyKQ0Kc3R1ZGVudCAlPD4lIG11dGF0ZSgNCiAg6Lqr6auY57Sa6LedPWN1dCjouqvpq5gsYygwLDE1MCwxNTUsMTYwLDE2NSwxNzAsMTc1LDE4MCwxODUsMjAwKSkpDQpgYGANCg0KDQpgYGB7cn0NCmFzLmZhY3RvcihzdHVkZW50JOWHuueUn+WcsCkgLT4gc3R1ZGVudCTlh7rnlJ/lnLANCmBgYA0KDQpgYGB7cn0NCmxldmVscyhzdHVkZW50JOWHuueUn+WcsCkNCmBgYA0KDQoNCmBgYHtyfQ0KdGFibGUoc3R1ZGVudCQn5Ye655Sf5ZywJykNCmBgYA0KDQpgYGB7cn0NCmFzLmZhY3RvcihzdHVkZW50JOWFpeWtuOW5tCkgLT4gc3R1ZGVudCTlhaXlrbjlubQNCmFzLmZhY3RvcihzdHVkZW50JOaAp+WIpSkgLT4gc3R1ZGVudCTmgKfliKUNCmBgYA0KDQpgYGB7cn0NCmxldmVscyhzdHVkZW50JCflhaXlrbjlubQnKQ0KbGV2ZWxzKHN0dWRlbnQk5oCn5YilKQ0KYGBgDQoNCmBgYHtyfQ0KdGFibGUoc3R1ZGVudCQn5YWl5a245bm0JykNCnRhYmxlKHN0dWRlbnQkJ+aAp+WIpScpDQpgYGANCg0KDQpgYGB7cn0NCmZhY3RvcihzdHVkZW50JOi6q+mrmOe0mui3nSwNCiAgICAgICBsZXZlbHM9YygiKDAsMTUwXSIsIigxNTAsMTU1XSIsICIoMTU1LDE2MF0iLCAiKDE2MCwxNjVdIiAsIigxNjUsMTcwXSIsICIoMTcwLDE3NV0iICwiKDE3NSwxODBdIiAsIigxODAsMTg1XSIsICIoMTg1LDIwMF0iKSwNCiAgICAgICBvcmRlcmVkPVRSVUUpIC0+IHN0dWRlbnQk6Lqr6auY57Sa6LedDQpgYGANCmBgYHtyfQ0KaGVpZ2h0TGV2ZWxzIDwtIGMoIigwLDE1MF0iLCIoMTUwLDE1NV0iLCAiKDE1NSwxNjBdIiwgIigxNjAsMTY1XSIgLCIoMTY1LDE3MF0iLCAiKDE3MCwxNzVdIiAsIigxNzUsMTgwXSIgLCIoMTgwLDE4NV0iLCAiKDE4NSwyMDBdIikNCmZhY3RvcihzdHVkZW50JCfouqvpq5jntJrot50nLA0KICAgICAgIGxldmVscz1oZWlnaHRMZXZlbHMsDQogICAgICAgb3JkZXJlZD1UUlVFKSAtPiBzdHVkZW50JCfouqvpq5jntJrot50nDQpgYGANCg0KYGBge3J9DQphPC0iMjAxNy0wMS0zMSINCmBgYA0KDQoNCmBgYHtyfQ0KbGlicmFyeShkcGx5cikNCmxpYnJhcnkobHVicmlkYXRlKQ0KYSA8LSB5bWQoIjIwMTctMDEtMzEiKSANCmIgPC0geW1kX2htcygiMjAxNy0wMS0zMSAyMDoxMTo1OSIpDQpgYGANCg0KYGBge3J9DQphIDwtIHltZCgiMjAxNy8wMS8zMSIpIA0KYiA8LSB5bWRfaG1zKCIyMDE3LTAxLTMxIDI6NTM6MDBwbSIpDQpgYGANCg0KDQoNCkFkZCBhIG5ldyBjaHVuayBieSBjbGlja2luZyB0aGUgKkluc2VydCBDaHVuayogYnV0dG9uIG9uIHRoZSB0b29sYmFyIG9yIGJ5IHByZXNzaW5nICpDdHJsK0FsdCtJKi4NCg0KV2hlbiB5b3Ugc2F2ZSB0aGUgbm90ZWJvb2ssIGFuIEhUTUwgZmlsZSBjb250YWluaW5nIHRoZSBjb2RlIGFuZCBvdXRwdXQgd2lsbCBiZSBzYXZlZCBhbG9uZ3NpZGUgaXQgKGNsaWNrIHRoZSAqUHJldmlldyogYnV0dG9uIG9yIHByZXNzICpDdHJsK1NoaWZ0K0sqIHRvIHByZXZpZXcgdGhlIEhUTUwgZmlsZSkuDQoNClRoZSBwcmV2aWV3IHNob3dzIHlvdSBhIHJlbmRlcmVkIEhUTUwgY29weSBvZiB0aGUgY29udGVudHMgb2YgdGhlIGVkaXRvci4gQ29uc2VxdWVudGx5LCB1bmxpa2UgKktuaXQqLCAqUHJldmlldyogZG9lcyBub3QgcnVuIGFueSBSIGNvZGUgY2h1bmtzLiBJbnN0ZWFkLCB0aGUgb3V0cHV0IG9mIHRoZSBjaHVuayB3aGVuIGl0IHdhcyBsYXN0IHJ1biBpbiB0aGUgZWRpdG9yIGlzIGRpc3BsYXllZC4NCg==</div>
 
 
 
