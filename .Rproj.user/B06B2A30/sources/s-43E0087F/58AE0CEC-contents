@@ -101,7 +101,10 @@ library(googlesheets)
 ```{r}
 gs_auth(new_user = TRUE)
 ```
-
+```{r}
+gsSurvey<-gs_key("4/ewC_jMFzklyLaV0GEwQziEUAwlpT9L5JPy673JvmsvhggHE55Yl4oOc")  #download sheet information as an object
+classSurvey<-gs_read(gsSurvey,ws=1) #access the 1st worksheet
+```
 
 
 

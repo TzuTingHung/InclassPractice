@@ -1,0 +1,4 @@
+"0","gsSurvey<-gs_key(""4/ewC_jMFzklyLaV0GEwQziEUAwlpT9L5JPy673JvmsvhggHE55Yl4oOc"")  #download sheet information as an object"
+"2","Error in gs_lookup(., ""sheet_key"", verbose) : 
+  ""4/ewC_jMFzklyLaV0GEwQziEUAwlpT9L5JPy673JvmsvhggHE55Yl4oOc"" doesn't match sheet_key of any sheet returned by gs_ls() (which should reflect user's Google Sheets home screen).
+"
