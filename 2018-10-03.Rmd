@@ -94,6 +94,15 @@ table(b)
 b
 ```
 
+```{r}
+library(googlesheets)
+```
+
+```{r}
+gs_auth(new_user = TRUE)
+```
+
+
 
 
 
