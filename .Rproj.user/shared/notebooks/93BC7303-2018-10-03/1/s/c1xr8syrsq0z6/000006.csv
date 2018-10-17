@@ -1,0 +1,4 @@
+"0","str_c(splitResult) ->arrayResult"
+"2","Error in stri_c(..., sep = sep, collapse = collapse, ignore_null = TRUE) : 
+  object 'splitResult' not found
+"

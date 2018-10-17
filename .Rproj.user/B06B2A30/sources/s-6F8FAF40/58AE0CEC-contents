@@ -71,7 +71,31 @@ table(cc)
 ```
 
 ```{r}
+head(filmVotingData$請選擇你最喜歡的影片二部)
 ```
+
+
+```{r}
+library(stringr)
+str_split_fixed(filmVotingData$請選擇你最喜歡的影片二部,","n=3) ->splitResult
+```
+```{r}
+str_c(splitResult) ->arrayResult
+head(arraryResult)
+```
+
+```{r}
+a<-c("A, B","B, C")
+a
+str_split_fixed(a,", ", n=3)->b
+str_c(b)->c
+c
+table(b)
+b
+```
+
+
+
 
 
 
