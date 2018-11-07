@@ -17,6 +17,7 @@ b<-"你好"
 bVector<-c("你好","How are you?")
 ```
 
+<<<<<<< HEAD
 ```{r}
 round(2.3875)
 ```
@@ -43,6 +44,8 @@ as.factor(student$出生地) -> student$出生地
 levels(student$出生地)
 ```
 
+=======
+>>>>>>> 40aaed3709c7b875e9ceef51c9c7b8d24fd23d28
 
 ```{r}
 table(student$'出生地')

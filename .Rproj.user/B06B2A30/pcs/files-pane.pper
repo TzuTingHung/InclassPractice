@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
     "path" : "D://InclassPractice",
+=======
+    "path" : "~/GitHub/InclassPractice",
+>>>>>>> 40aaed3709c7b875e9ceef51c9c7b8d24fd23d28
     "sortOrder" : [
         {
             "ascending" : true,

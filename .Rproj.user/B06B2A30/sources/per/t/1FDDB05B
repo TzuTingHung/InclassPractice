@@ -2,14 +2,22 @@
     "collab_server" : "",
     "contents" : "",
     "created" : 1537948137978.000,
-    "dirty" : true,
+    "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
+<<<<<<< HEAD:.Rproj.user/B06B2A30/sources/s-8FD182DC/1FDDB05B
     "hash" : "2369739577",
     "id" : "1FDDB05B",
     "lastKnownWriteTime" : 1537952448,
     "last_content_update" : 1537952448531,
     "path" : "D://InclassPractice/2018-09-26.Rmd",
+=======
+    "hash" : "1642326770",
+    "id" : "1FDDB05B",
+    "lastKnownWriteTime" : 1539765681,
+    "last_content_update" : 1539765681971,
+    "path" : "~/GitHub/InclassPractice/2018-09-26.Rmd",
+>>>>>>> 40aaed3709c7b875e9ceef51c9c7b8d24fd23d28:.Rproj.user/B06B2A30/sources/per/t/1FDDB05B
     "project_path" : "2018-09-26.Rmd",
     "properties" : {
         "chunk_output_type" : "inline",
