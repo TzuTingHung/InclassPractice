@@ -120,9 +120,23 @@ college1stYearData %>%
     一年級男生=parse_number(一年級男生,local=c1),
     一年級女生=parse_number(...),
     二年級男生=parse_number(...),
-    二年級女生=parse_number(...),
+    二年級女生=parse_number(...)
   )
 ```
+
+```{r}
+parse_number(.,locale = c1)
+```
+```{r}
+college1stYearData %>%
+  mutate_all(
+    funs(
+      parse_number(.,locale = c1)
+    )
+  )
+```
+
+
 
 
 
