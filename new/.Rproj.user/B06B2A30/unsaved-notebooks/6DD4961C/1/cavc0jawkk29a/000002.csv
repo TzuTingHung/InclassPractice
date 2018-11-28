@@ -1,0 +1,13 @@
+"0","classData[classData$`公-10-06`==""沒看公告"",] ->subData2"
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","sum(subData2$`練2018-10-17-1`==""1"")/nrow(subData2)"
+"1","[1]"
+"1"," 0.36"
+"1","
+"

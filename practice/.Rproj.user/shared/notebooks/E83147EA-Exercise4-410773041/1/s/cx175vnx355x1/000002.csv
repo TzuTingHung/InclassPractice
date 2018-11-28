@@ -1,0 +1,11 @@
+"0","as.factor(allBankData$銀行) ->allBankData$銀行"
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","as.factor(allBankData$年月) ->allBankData$年月"
+"0","as.numeric(allBankData$`定存利率-三個月-固定`)->allBankData$`定存利率-三個月-固定`"
+"0","as.numeric(allBankData$`定存利率-一年期-固定`)->allBankData$`定存利率-一年期-固定`"

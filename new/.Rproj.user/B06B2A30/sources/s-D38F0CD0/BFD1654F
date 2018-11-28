@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1542173122221.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "BFD1654F",
+    "lastKnownWriteTime" : 16,
+    "last_content_update" : 1542173122221,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "8188431A",
+        "caption" : "gsHW2ws",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=gsHW2ws&cache_key=8188431A",
+        "displayedObservations" : 45,
+        "environment" : "",
+        "object" : "gsHW2ws",
+        "preview" : 0,
+        "totalObservations" : 45,
+        "variables" : 6
+    },
+    "relative_order" : 10,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

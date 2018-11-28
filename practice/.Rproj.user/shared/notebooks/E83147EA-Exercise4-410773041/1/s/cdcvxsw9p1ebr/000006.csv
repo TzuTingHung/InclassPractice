@@ -1,0 +1,16 @@
+"0","x <-gsHW2ws[(gsHW2ws$答對率==""0.6""),1:5]"
+"2","Warning messages:
+"
+"2","1: "
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"2","2: "
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","#which((y<0.5))"
