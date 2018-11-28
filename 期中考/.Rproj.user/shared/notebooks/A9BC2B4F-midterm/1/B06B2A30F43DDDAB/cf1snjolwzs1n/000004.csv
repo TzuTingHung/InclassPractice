@@ -1,0 +1,12 @@
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","is.na(hwGrades$hw1) -> aa"
+"0","!is.na(hwGrades$hw1) -> bb"
+"0","hwGrades$交作業次數 <- as.numeric(!is.na(hwGrades$hw1))+"
+"0","  as.numeric(!is.na(hwGrades$hw2))+"
+"0","  as.numeric(!is.na(hwGrades$Exercise3))"
