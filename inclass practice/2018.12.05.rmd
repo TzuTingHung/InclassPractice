@@ -140,3 +140,25 @@ libraryData %>%
   )
 ```
 
+```{r}
+libraryData %>%
+   select(讀者借閱冊數,書籍出版日期) %>%
+   summarise(
+    讀者平均借閱冊數=mean(讀者借閱冊數),
+    最小書籍出版日期=min(書籍出版日期,na.rm=T),
+    最大書籍出版日期=max(書籍出版日期,na.rm=T)
+   )
+```
+
+```{r}
+library(summarytools)
+libraryData %>%
+  select_if(
+    is.numeric
+  ) %>% summarytools::dfSummary() %>% summarytools::view(.)
+```
+
+```{r}
+(libraryData$書籍出版日期=="1199")%>%
+  which(.)%>%libraryData[.,]
+```

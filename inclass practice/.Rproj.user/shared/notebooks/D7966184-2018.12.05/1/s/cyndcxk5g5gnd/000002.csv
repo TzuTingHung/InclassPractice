@@ -1,0 +1,2 @@
+"0","(libraryData$書籍出版日期==""1199"")%>%"
+"0","  which(.)%>%libraryData[.,]"
