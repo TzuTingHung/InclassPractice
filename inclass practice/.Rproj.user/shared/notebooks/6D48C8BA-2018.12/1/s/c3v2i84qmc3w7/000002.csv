@@ -1,0 +1,5 @@
+"0","findMyCollege<-function(x){"
+"0","  (libraryData$學院==x)-> logIndex"
+"0","libraryData[logIndex,]-> subsample"
+"0","return(subsample)"
+"0","}"
