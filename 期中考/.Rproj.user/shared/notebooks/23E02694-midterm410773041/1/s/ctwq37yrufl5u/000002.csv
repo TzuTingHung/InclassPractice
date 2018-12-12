@@ -1,0 +1,13 @@
+"0","str_detect(classSurvey$課外活動,""團體活動"") ->q"
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","sum(q==""TURE"")"
+"1","[1]"
+"1"," 0"
+"1","
+"

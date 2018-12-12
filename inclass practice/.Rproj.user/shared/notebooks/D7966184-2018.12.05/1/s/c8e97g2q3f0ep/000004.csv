@@ -1,5 +1,0 @@
-"0","libraryData %>%"
-"0","  group_by(學院) %>%"
-"0","  summarise("
-"0","  學院借閱冊數=length(學號)"
-"0","  )"

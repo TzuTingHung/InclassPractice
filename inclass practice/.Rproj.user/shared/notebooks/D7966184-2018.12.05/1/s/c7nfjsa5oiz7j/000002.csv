@@ -1,0 +1,2 @@
+"0","libraryData$學院 %>% as.factor %>% levels -> college"
+"0","  collegeBorrowCount[[i]]<-collegeBorrowCount_i"
