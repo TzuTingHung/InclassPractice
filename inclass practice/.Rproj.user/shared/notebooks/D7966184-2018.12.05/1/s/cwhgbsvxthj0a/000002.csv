@@ -1,5 +1,0 @@
-"0","ans<-0"
-"0","for(i in 1:10){"
-"0","  newlyAdded<-i"
-"0","  ans<-ans+newlyAdded"
-"0","}"

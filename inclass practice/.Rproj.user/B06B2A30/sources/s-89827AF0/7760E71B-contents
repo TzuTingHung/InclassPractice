@@ -248,7 +248,53 @@ studentBorrow[[i]] <- studentBorrow_i
 ```{r}
 ans<-0
 for(i in 1:10){
-  newlyAdded<-i
+  newlyAdded<-i 
   ans<-ans+newlyAdded
 }
+```
+
+```{r}
+libraryData %>%
+  group_by(書籍館藏地) %>%
+  summarise(
+    borrowCount=length(學號)
+  ) -> result
+result
+```
+
+
+```{r}
+libraryData %>%
+  mutate(
+    學系=str_sub(學號,5,6)
+    ## 相當於 libraryData$學系 <- str_sub(libraryData$學號,5,6)
+  ) -> libraryData
+```
+
+```{r}
+libraryData %>%
+  group_by(學院,入學年) %>%
+  summarise(
+    borrowCount=length(學號)
+  ) -> result2
+result2
+```
+
+```{r}
+libraryData %>%
+  filter(入學年==102)
+```
+
+## 第一次進圖書館
+```{r}
+libraryData %>%
+  mutate(
+      借閱時間=ymd_hms(借閱時間,tz="Asia/Taipei")
+  ) %>%
+  group_by(學號) %>%
+  summarise(
+    第一次借書=min(借閱時間)
+  ) %>%
+  ungroup -> result3
+result3
 ```
