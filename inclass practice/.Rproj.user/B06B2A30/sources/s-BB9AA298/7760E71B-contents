@@ -298,3 +298,5 @@ libraryData %>%
   ungroup -> result3
 result3
 ```
+
+```{r}
