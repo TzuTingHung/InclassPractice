@@ -1,0 +1,13 @@
+"0","transcriptData$學號 %>%unique ->allStudentID"
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","#i<-1"
+"0","#studentID_i <-allStudentID[i]"
+"0","studentID_i %>% totalCredits"
+"2","Error in eval(lhs, parent, parent) : object 'studentID_i' not found
+"
